@@ -153,6 +153,8 @@ line-height: 38px;
     border: none;
     text-align: center;
     position: relative;
+    appearance: none;
+    -webkit-appearance:none ;
 }
 .btn:hover{
     cursor: pointer;
@@ -205,7 +207,7 @@ line-height: 38px;
     position:relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/slider1.jpg') top center / cover no-repeat;
     
 
 }
@@ -222,6 +224,7 @@ line-height: 38px;
 .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow:0 0 1px #000;
 
 }
 
@@ -466,6 +469,15 @@ header.modal-header{
 .contact-info i[class*='ti-'] {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0,8;
+}
+.contact-info a:hover{
+    opacity: 1;
+
 }
 
 .contact-form{
