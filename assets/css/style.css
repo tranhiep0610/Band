@@ -35,9 +35,14 @@ html{
     background-color: #000;
     z-index: 1;
     /* thuộc tính fixed bị chìm xuống nên dùng thuộc tính nay tăng từ 1 bao h đc thì thôi */
-    overflow: hidden;
 }
 
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 #header .mobile-menu-btn,
 #header .search-btn{
     float: right;
@@ -74,6 +79,7 @@ html{
 
 #nav>li>a{
     color : white;
+    text-transform: uppercase;
 
 }
 #nav{
@@ -145,7 +151,8 @@ line-height: 38px;
     margin-top: 15px;
     /* tạo block cho nút  */
     border: none;
-
+    text-align: center;
+    position: relative;
 }
 .btn:hover{
     cursor: pointer;
@@ -178,6 +185,7 @@ line-height: 38px;
 .col-full{
     width: 100%;
 }
+
 .text-center{
     text-align: center !important;
 }
@@ -188,6 +196,11 @@ line-height: 38px;
 .mt-16{
     margin-top: 16px;
 }
+
+.mt-32{
+    margin-top: 32px;
+}
+
 #slider{
     position:relative;
     margin-top: 46px;
@@ -255,7 +268,7 @@ line-height: 38px;
 }
 
 #content .member-list{
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name{
@@ -316,6 +329,7 @@ line-height: 38px;
 .place-img{
     width: 100%;
     display: block;
+    position: static;
 }
 
 .place-img:hover{
@@ -326,12 +340,13 @@ line-height: 38px;
     background-color: #fff;
     font-size: 15px;
     padding: 16px;
+    position: relative;
 
 }
 
 .place-heading{
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 600px;
 
 }
 
